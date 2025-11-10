@@ -59,6 +59,21 @@ export default function Index() {
                     </TouchableOpacity>
                 </Link>
 
+                <Link href="/(stack)/cursos" asChild>
+                    <TouchableOpacity style={[styles.card, styles.cardCursos]}>
+                        <View style={styles.cardIcon}>
+                            <Text style={styles.iconText}>🎓</Text>
+                        </View>
+                        <View style={styles.cardContent}>
+                            <Text style={styles.cardTitle}>Cursos</Text>
+                            <Text style={styles.cardDescription}>
+                                Conheça os cursos oferecidos pela FATEC Cotia
+                            </Text>
+                        </View>
+                        <Text style={styles.arrow}>→</Text>
+                    </TouchableOpacity>
+                </Link>
+
                 <Link href="/(stack)/empregos" asChild>
                     <TouchableOpacity style={[styles.card, styles.cardEmpregos]}>
                         <View style={styles.cardIcon}>
@@ -177,6 +192,9 @@ const styles = StyleSheet.create({
     },
     cardSeguranca: {
         borderLeftColor: '#60737E',
+    },
+    cardCursos: {
+        borderLeftColor: '#000000',
     },
     cardIcon: {
         marginRight: 16,
