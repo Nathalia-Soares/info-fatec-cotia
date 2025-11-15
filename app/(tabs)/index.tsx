@@ -103,6 +103,21 @@ export default function Index() {
                         <Text style={styles.arrow}>→</Text>
                     </TouchableOpacity>
                 </Link>
+
+                <Link href="/sobre" asChild>
+                    <TouchableOpacity style={[styles.card, styles.cardSobre]}>
+                        <View style={styles.cardIcon}>
+                            <Text style={styles.iconText}>ℹ️</Text>
+                        </View>
+                        <View style={styles.cardContent}>
+                            <Text style={styles.cardTitle}>Sobre</Text>
+                            <Text style={styles.cardDescription}>
+                                Saiba mais sobre a desenvolvedora deste app
+                            </Text>
+                        </View>
+                        <Text style={styles.arrow}>→</Text>
+                    </TouchableOpacity>
+                </Link>
             </ScrollView>
         </View>
     )
@@ -195,6 +210,9 @@ const styles = StyleSheet.create({
     },
     cardCursos: {
         borderLeftColor: '#000000',
+    },
+    cardSobre: {
+        borderLeftColor: '#0a84ff',
     },
     cardIcon: {
         marginRight: 16,
