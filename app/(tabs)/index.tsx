@@ -104,6 +104,21 @@ export default function Index() {
                     </TouchableOpacity>
                 </Link>
 
+                <Link href="/chat" asChild>
+                    <TouchableOpacity style={[styles.card, styles.cardChat]}>
+                        <View style={styles.cardIcon}>
+                            <Text style={styles.iconText}>💬</Text>
+                        </View>
+                        <View style={styles.cardContent}>
+                            <Text style={styles.cardTitle}>Chat IA</Text>
+                            <Text style={styles.cardDescription}>
+                                Converse com nossa IA sobre a Fatec Cotia
+                            </Text>
+                        </View>
+                        <Text style={styles.arrow}>→</Text>
+                    </TouchableOpacity>
+                </Link>
+
                 <Link href="/sobre" asChild>
                     <TouchableOpacity style={[styles.card, styles.cardSobre]}>
                         <View style={styles.cardIcon}>
@@ -210,6 +225,9 @@ const styles = StyleSheet.create({
     },
     cardCursos: {
         borderLeftColor: '#000000',
+    },
+    cardChat: {
+        borderLeftColor: '#25D366',
     },
     cardSobre: {
         borderLeftColor: '#0a84ff',
